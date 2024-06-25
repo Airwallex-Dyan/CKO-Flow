@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Web Flow Payment</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+        <div class="logo">
+            <img src="../images/logo.png" alt="">
+        </div>
+        <!-- 订单内容 -->
+        <div class="module order-module">
+            <div class="demo-store">
+                <h3>DEMO STORE</h3>
+                <h4>Order Summary</h4>
+                <ul>
+                    <li>
+                        <div class="img">
+                            <img src="../images/Tshirt.jpg" alt="" />
+                        </div>
+                        <div class="info">
+                            <p>Pocket Striped T Shirt/M/White x 1</p>
+                            <p>50.00 EUR</p>
+                        </div>
+                    </li>
+                    <li class="subtotal">
+                        <p>Subtotal</p>
+                        <p>50.00 EUR</p>
+                    </li>
+                </ul>
+                <div class="total">
+                    <p>Total to pay</p>
+                    <p>50.00 EUR</p>
+                </div>
+            </div>
+        </div>
+        <!-- 支付模块 -->
+        <div class="module right-module">
+            <div id="successToast" class="toast success">
+                <span>The payment was successful</span>
+            </div>
+
+            <div id="failedToast" class="toast failed">
+                <span>The payment failed, try again</span>
+            </div>
+
+            <form>
+                <div class="container">
+                    <h4>Select payment method</h4>
+                    <div id="flow-container"></div>
+                </div>
+                <span id="error-message"></span>
+                <span id="successful-payment-message"></span>
+            </form>
+        </div>
+        <script src="https://checkout-web-components.checkout.com/index.js"></script>
+
+        <script src="app.js"></script>
+</body>
+</html>

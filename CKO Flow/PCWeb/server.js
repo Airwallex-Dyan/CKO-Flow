@@ -83,7 +83,6 @@ app.post("/create-payment-sessions", async (_req, res) => {
            "card",
           "applepay",
           "googlepay",
-          "giropay",
           "sofort",
         ],
       }),
